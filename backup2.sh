@@ -6,10 +6,12 @@
 ################################
 
 # Что будем резервировать
-backup_files="logpass.py backup.sh settings_netplan.py settings_ifupdown.py"
+echo "Путь к файлам для резервирования "
+read backup_files
 
 # Куда резервируем?
-dest="/root/backup"
+echo "Куда будем резервировать"
+read dest
 
 # Имя архива
 day=$(date +%A)
